@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mystery Gift 🎁</title>
+
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Background Decorations -->
+
+    <div class="background">
+
+        <span class="sparkle sparkle-1">✦</span>
+
+        <span class="sparkle sparkle-2">✧</span>
+
+        <span class="sparkle sparkle-3">✦</span>
+
+        <span class="heart heart-1">♡</span>
+
+        <span class="heart heart-2">♡</span>
+
+    </div>
+
+
+
+    <!-- Main App -->
+
+    <main class="app">
+
+
+        <!-- =========================================
+             WELCOME SCREEN
+        ========================================== -->
+
+        <section
+            class="screen welcome-screen"
+            id="welcomeScreen"
+        >
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+
+            <p class="small-text">
+                A little mystery for you...
+            </p>
+
+
+            <h1>
+                Hey, you. 👀
+            </h1>
+
+
+            <p class="description">
+
+                Someone has a few little questions
+                they'd like to ask you.
+
+            </p>
+
+
+            <button
+                class="primary-button"
+                id="startButton"
+                type="button"
+            >
+
+                Let's see
+
+                <span>→</span>
+
+            </button>
+
+
+            <p class="anonymous-text">
+
+                No names. No clues. Just curiosity. 🕵️
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================================
+             QUESTION SCREEN
+        ========================================== -->
+
+        <section
+            class="screen question-screen hidden"
+            id="questionScreen"
+        >
+
+
+            <!-- Progress -->
+
+            <div class="progress">
+
+                <span class="progress-dot active"></span>
+
+                <span class="progress-dot"></span>
+
+                <span class="progress-dot"></span>
+
+            </div>
+
+
+            <!-- Question Number -->
+
+            <p class="question-number">
+                Question 01
+            </p>
+
+
+            <!-- Question -->
+
+            <h2 id="questionTitle">
+
+                What's something you've
+                been wanting lately?
+
+            </h2>
+
+
+            <!-- Answer Options -->
+
+            <div
+                class="answer-area"
+                id="answerArea"
+            >
+
+                <!-- JavaScript inserts answers here -->
+
+            </div>
+
+
+            <!-- Next -->
+
+            <button
+                class="primary-button next-button"
+                id="nextButton"
+                type="button"
+                disabled
+            >
+
+                Next
+
+                <span>→</span>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================================
+             GIFT SCREEN
+        ========================================== -->
+
+        <section
+            class="screen gift-screen hidden"
+            id="giftScreen"
+        >
+
+
+            <div class="gift-icon">
+                🎀
+            </div>
+
+
+            <p class="small-text">
+                Okay... one last thing 👀
+            </p>
+
+
+            <h2>
+
+                Imagine someone wanted
+                to surprise you...
+
+            </h2>
+
+
+            <p class="description">
+
+                What gift would genuinely make
+                you happy?
+
+            </p>
+
+
+            <textarea
+                id="giftAnswer"
+                class="gift-input"
+                placeholder="Tell me what you'd love to receive..."
+                maxlength="300"
+            ></textarea>
+
+
+            <button
+                class="primary-button"
+                id="submitButton"
+                type="button"
+            >
+
+                Send my answer
+
+                <span>💌</span>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================================
+             FINAL SCREEN
+        ========================================== -->
+
+        <section
+            class="screen final-screen hidden"
+            id="finalScreen"
+        >
+
+
+            <div class="final-icon">
+                💌
+            </div>
+
+
+            <h2>
+
+                Your answer has been delivered.
+
+            </h2>
+
+
+            <p class="description">
+
+                Somewhere out there,
+                someone is taking notes. 👀
+
+            </p>
+
+
+            <div class="mystery-message">
+
+                <span>🔒</span>
+
+                Your secret is safe.
+
+            </div>
+
+
+            <p class="final-text">
+
+                Thank you for playing along. ♡
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         EMAILJS
+    ========================================== -->
+
+    <!-- EmailJS MUST load before script.js -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+
+    <!-- Your JavaScript -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+```
