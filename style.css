@@ -326,6 +326,8 @@ h2 {
 
     font-size: 46px;
 
+    overflow: hidden;
+
     background:
         linear-gradient(
             135deg,
@@ -342,6 +344,13 @@ h2 {
         0 0 0 5px rgba(197, 164, 90, 0.08);
 
     animation: giftFloat 3s ease-in-out infinite;
+}
+
+.gift-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
 
 
@@ -634,6 +643,8 @@ h2 {
 
     font-size: 50px;
 
+    overflow: hidden;   /* اضافه شد */
+
     background:
         linear-gradient(
             135deg,
@@ -652,36 +663,10 @@ h2 {
         pulse 2.5s ease-in-out infinite;
 }
 
-.mystery-message {
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 8px;
-
-    padding: 13px;
-
-    margin-bottom: 20px;
-
-    border: 1px solid rgba(197, 164, 90, 0.25);
-
-    border-radius: 6px;
-
-    background:
-        rgba(248, 242, 233, 0.8);
-
-    font-size: 13px;
-
-    font-weight: 600;
-
-    color: #766b69;
-}
-
-.final-text {
-    font-size: 13px;
-
-    color: #9b908d;
+.final-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
